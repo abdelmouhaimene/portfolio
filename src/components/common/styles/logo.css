@@ -1,0 +1,15 @@
+.logo {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border-radius: 50%;
+	box-shadow: 1px 2px black, -0.2em 0 .5em gray;
+}
+
+@media (max-width: 600px) {
+	.logo {
+		display: none;
+	}
+
+}
+

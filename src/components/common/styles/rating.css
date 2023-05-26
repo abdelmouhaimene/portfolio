@@ -1,0 +1,15 @@
+
+.star {
+    height: 12px;
+    margin: 2px ;
+}
+
+.rating{
+    margin-left: 2px;
+    padding: 2px;
+    display: flex;
+    width: min-content;
+    border-radius: 8px;
+    border : solid 1px gray; 
+}
+
