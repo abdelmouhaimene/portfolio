@@ -5,7 +5,7 @@ import styled from "styled-components";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-
+import useLangue from "../hooks/useLangue";
 import INFO from "../data/user";
 import myArticles from "../data/articles";
 
@@ -27,7 +27,7 @@ const ReadArticle = () => {
 	ArticleStyle = styled.div`
 		${article().style}
 	`;
-
+	const {t} = useLangue()
 	return (
 		<React.Fragment>
 			<div className="page-content">
@@ -58,7 +58,7 @@ const ReadArticle = () => {
 							</div>
 
 							<div className="title read-article-title">
-								{article().title}
+								{t(article().title)}
 							</div>
 
 							<div className="read-article-body">

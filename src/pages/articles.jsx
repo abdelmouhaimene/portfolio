@@ -4,7 +4,7 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Article from "../components/articles/article";
-
+import useLangue from "../hooks/useLangue";
 import INFO from "../data/user";
 import myArticles from "../data/articles";
 
@@ -15,7 +15,7 @@ const Articles = () => {
 		document.title = `Articles | ${INFO.main.title}`;
 		window.scrollTo(0, 0);
 	}, []);
-
+	const {t} =useLangue();
 	return (
 		<React.Fragment>
 			<div className="page-content">
@@ -29,11 +29,11 @@ const Articles = () => {
 
 					<div className="articles-main-container">
 						<div className="title articles-title">
-							{INFO.articles.title}
+							{t(INFO.articles.title)}
 						</div>
 
 						<div className="subtitle articles-subtitle">
-							{INFO.articles.description}
+							{t(INFO.articles.description)}
 						</div>
 
 						<div className="articles-container">

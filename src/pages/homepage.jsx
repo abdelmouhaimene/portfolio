@@ -15,7 +15,7 @@ import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import AllSkills from "../components/skills/allSkills";
 import { saveAs } from 'file-saver';
-
+import useLangue from "../hooks/useLangue";
 import INFO from "../data/user";
 import myArticles from "../data/articles";
 
@@ -68,6 +68,7 @@ const Homepage = () => {
 		saveAs(INFO.main.cvFile, 'Cv_Abdelmouhaimene_Assila.pdf');
 	};
 
+	const {t} = useLangue()
 	return (
 		<React.Fragment>
 			<div className="page-content">
@@ -83,14 +84,14 @@ const Homepage = () => {
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">
-									<small style={{fontSize:"36px"}}>Hey 👋, I am Abdelmouhaimene </small><br/> {INFO.homepage.title}
+									<small style={{fontSize:"32px"}}>{t("Hey 👋, I am Abdelmouhaimene")} </small><br/> {t(INFO.homepage.title)}
 								</div>
 
 								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
+									{t(INFO.homepage.description)}
 									<div className="homepage-second-area">
 									<div className="download-cv">
-										<button className="button-54" onClick={handleDownload}>Download CV</button>
+										<button className="button-54" onClick={handleDownload}>{t("Download CV")}</button>
 									</div>
 									<div className="homepage-socials">
 										<a
@@ -157,7 +158,7 @@ const Homepage = () => {
 
 
 						<div className="homepage-skills">
-							<h1 className="homepage-skills-title">Skills </h1>  
+							<h1 className="homepage-skills-title">{t("Skills")} </h1>  
 							<AllSkills />
 							
 						</div>

@@ -55,6 +55,20 @@
 	transition: color 0.3s ease-in-out;
 }
 
+.langueToggle{
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+.langueToggle span{
+	font-size: 10px;
+	font-weight: bold;
+}
+.langueToggle:hover{
+	scale: 1.1;
+	color: var(--link-color);
+	
+}
+
 @media (max-width: 600px) {
 	.navbar {
 		margin-left: 25%;

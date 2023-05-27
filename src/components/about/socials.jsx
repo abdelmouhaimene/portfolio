@@ -9,10 +9,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import INFO from "../../data/user";
-
+import useLangue from "../../hooks/useLangue";
 import "./styles/socials.css";
 
 const Socials = () => {
+	const {t} = useLangue()
 	return (
 		<div className="socials">
 			<div className="social">
@@ -23,7 +24,7 @@ const Socials = () => {
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Follow on Twitter</div>
+					<div className="social-text">{t("Follow on")} Twitter</div>
 				</a>
 			</div>
 
@@ -35,7 +36,7 @@ const Socials = () => {
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Follow on GitHub</div>
+					<div className="social-text">{t("Follow on")} GitHub</div>
 				</a>
 			</div>
 
@@ -51,7 +52,7 @@ const Socials = () => {
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Follow on LinkedIn</div>
+					<div className="social-text">{t("Follow on")} LinkedIn</div>
 				</a>
 			</div>
 
@@ -67,7 +68,7 @@ const Socials = () => {
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Follow on Instagram</div>
+					<div className="social-text">{t("Follow on")} Instagram</div>
 				</a>
 			</div>
 

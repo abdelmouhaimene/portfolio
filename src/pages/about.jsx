@@ -4,13 +4,14 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
-
+import useLangue from "../hooks/useLangue";
 import INFO from "../data/user";
 
 import "./styles/about.css";
 const About = () => {
+	const {t} =useLangue()
 	useEffect(() => {
-		document.title = `About | ${INFO.main.title}`;
+		document.title = `About | ${t(INFO.main.title)}`;
 		window.scrollTo(0, 0);
 	}, []);
 
@@ -29,11 +30,11 @@ const About = () => {
 						<div className="about-main">
 							<div className="about-right-side">
 								<div className="title about-title">
-									{INFO.about.title}
+									{t(INFO.about.title)}
 								</div>
 
 								<div className="subtitle about-subtitle">
-									{INFO.about.description}
+									{t(INFO.about.description)}
 								</div>
 							</div>
 
