@@ -12,6 +12,9 @@ const style =  `
 .randImage {
 	align-self: center;
 	outline: 2px solid red;
+	max-width: 100%;
+	height : auto;
+
 }
 `
 function article_1() {

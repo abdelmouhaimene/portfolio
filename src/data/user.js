@@ -26,7 +26,7 @@ const INFO = {
 	about: {
 		title: "I’ m Abdelmouhaimene Assila. I’m from Algeria, I have a  master degree in software engineering.",
 		description:
-			"I've worked on some projects during the university years, and over the mounths i worked on NEW DIGITAL WAY, especially in frontend development and using and software design and so database architecture. I am highly driven and motivated to excel and grow within the field of development and software engineering."
+			"I've worked on some projects during the university years, and over the mounths i worked on NEW DIGITAL WAY, especially in frontend development using React.js and software design and so database architecture. I am highly driven and motivated to excel and grow within the field of development and software engineering."
 	},
 	articles: {
 		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",

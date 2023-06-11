@@ -1,13 +1,28 @@
 @import "../../../data/styles.css";
 
 .works-body {
-	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+
+	padding-right: 2rem;
 }
 
 .work {
 	display: flex;
-	padding-bottom: 40px;
-	width: 400px;
+	width: 100%;
+	justify-content: space-between;
+	padding: 0rem 1rem 2rem 1rem ;
+	;
+}
+
+.work-all{
+	display: flex;
+	align-items: center;
+
+}
+
+.work-all-title{
+	margin-left: 1rem;
 }
 
 .work-image {
@@ -21,24 +36,18 @@
 .work-title {
 	font-size: 15px;
 	font-weight: 700;
-	padding-left: 20px;
-	margin-top: -3px;
 	color: var(--secondary-color);
 }
 
 .work-subtitle {
-	position: absolute;
+
 	font-size: 12px;
 	color: var(--secondary-color);
-	padding-top: 22px;
-	padding-left: 50px;
+
 }
 
 .work-duration {
-	position: absolute;
-	width: 350px;
 	font-size: 12px;
-	padding-top: 20px;
-	text-align: right;
+	/* text-align: center; */
 	color: var(--tertiary-color);
 }

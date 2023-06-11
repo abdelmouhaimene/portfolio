@@ -39,7 +39,6 @@
 .homepage-image-container {
 	width: 370px;
 	height: 370px;
-	
 }
 
 .homepage-image-wrapper {
@@ -47,6 +46,8 @@
 	border-radius: 10%;
 	transform: rotate(3deg);
 	box-shadow: 6px 2px black, -1em -1em .9em gray;
+	background: #000;
+
 }
 
 .homepage-image-wrapper img {
@@ -62,12 +63,13 @@
 .homepage-social-icon {
 	padding-right: 20px;
 	font-size: 25px;
-	transition: color 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
 	color: var(--secondary-color);
 }
 
 .homepage-social-icon:hover {
 	color: var(--primary-color);
+	transform:  translateY(-3px);
 }
 
 .homepage-after-title {
@@ -76,7 +78,7 @@
 
 .homepage-skills {
 	
-	padding: 2rem 2rem;
+	padding: 2rem;
 	background-color: rgba(0, 0, 0, 0.123);
 	border-radius: 12px;
 }
@@ -89,9 +91,9 @@
 }
 
 .homepage-articles {
-	flex-basis: 900px;
+	flex-basis: 800px;
 	padding-top: 30px;
-	margin-left: -30px;
+	
 }
 
 .homepage-article {
@@ -210,6 +212,18 @@
 	.button-54{
 		margin-bottom: 1rem;
 	}
+
+	.homepage-image-container {
+		width: 340px;
+		height: 340px;
+		
+	}
+
+	.homepage-works {
+		padding: 2rem;
+	}
+
+
 }
 
 

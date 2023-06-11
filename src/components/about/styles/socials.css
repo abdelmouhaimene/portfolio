@@ -5,6 +5,15 @@
 	padding-bottom: 20px;
 }
 
+
+.social-text:hover {
+	
+	transform:  translateX(4px);
+}
+
+
+
+
 .social a,
 .email-wrapper a {
 	text-decoration: none;
@@ -16,6 +25,7 @@
 }
 
 .social-text {
+	transition: transform 0.2s ease-in-out;
 	color: var(--secondary-color);
 	padding-left: 30px;
 	margin-top: -20px;

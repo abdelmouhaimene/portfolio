@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import useLangue from "../../hooks/useLangue";
 import "./styles/footer.css";
 
 const Footer = () => {
+	const date = new Date();
+	const year = date.getFullYear();
+	const {t} = useLangue()
 	return (
 		<React.Fragment>
 			<div className="footer">
@@ -16,7 +19,7 @@ const Footer = () => {
 							<Link to="/about">About</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/projects">Projects</Link>
+							<Link to="/skills">Skills</Link>
 						</li>
 						<li className="footer-nav-link-item">
 							<Link to="/articles">Articles</Link>
@@ -29,7 +32,7 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2023 Tharindu.dev. All Rights Reserved.
+						© {year} Assila.WorkSpace {t("All Rights Reserved")}.
 					</div>
 				</div>
 			</div>
