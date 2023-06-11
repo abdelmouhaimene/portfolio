@@ -11,7 +11,7 @@ import "./styles/about.css";
 const About = () => {
 	const {t} =useLangue()
 	useEffect(() => {
-		document.title = `About || ${t(INFO.main.title)}`;
+		document.title = "About" || t(INFO.main.title);
 		window.scrollTo(0, 0);
 	}, []);
 
