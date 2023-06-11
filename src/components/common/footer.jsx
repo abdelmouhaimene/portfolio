@@ -13,19 +13,19 @@ const Footer = () => {
 				<div className="footer-links">
 					<ul className="footer-nav-link-list">
 						<li className="footer-nav-link-item">
-							<Link to="/">Home</Link>
+							<Link to="/">{t("Home")}</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/about">About</Link>
+							<Link to="/about">{t("About")}</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/skills">Skills</Link>
+							<Link to="/skills">{t("Skills")}</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/articles">Articles</Link>
+							<Link to="/articles">{t("Articles")}</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/contact">Contact</Link>
+							<Link to="/contact">{t("Contact")}</Link>
 						</li>
 					</ul>
 				</div>
