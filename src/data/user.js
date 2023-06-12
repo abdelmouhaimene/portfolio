@@ -6,7 +6,8 @@ const INFO = {
 		email: "Assila.workspace@gmail.com",
 		logo: "../w.png",
 		logo2 : "../walogo1.png",
-		cvFile : '../Cv_Abdelmouhaimene_Assila.pdf'
+		cvFileFr : '../cv-fr.pdf',
+		cvFileEn : '../cv-en.pdf'
 	},
 
 	socials: {

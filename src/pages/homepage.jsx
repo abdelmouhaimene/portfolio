@@ -22,6 +22,7 @@ import myArticles from "../data/articles";
 import "./styles/homepage.css";
 
 const Homepage = () => {
+
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
@@ -64,11 +65,14 @@ const Homepage = () => {
 		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
 	};
 
+	const {t,currentLangue} = useLangue()
+
 	const handleDownload = () => {
-		saveAs(INFO.main.cvFile, 'Cv_Abdelmouhaimene_Assila.pdf');
+		const fileName = currentLangue === "fr" ? 'Cv_Abdelmouhaimene_Assila_fr.pdf' : 'Cv_Abdelmouhaimene_Assila_en.pdf'
+		const fileSrc =  currentLangue === "fr" ? INFO.main.cvFileFr : INFO.main.cvFileEn
+		saveAs(fileSrc, fileName);
 	};
 
-	const {t} = useLangue()
 	return (
 		<React.Fragment>
 			<div className="page-content">
